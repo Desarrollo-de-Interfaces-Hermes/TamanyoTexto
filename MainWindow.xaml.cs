@@ -27,7 +27,7 @@ namespace TamanyoTexto
 
         private void RadioButtonTamaño_Checked(object sender, RoutedEventArgs e)
         {
-            TextoModificar.FontSize = (sender as RadioButton).Tag.ToString();
+            TextoModificar.FontSize = double.Parse((sender as RadioButton).Tag.ToString());
         }
     }
 }
